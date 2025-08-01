@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import "./styles/main.css";
 import Navbar from "./components/Header/Navbar";
 import Hero from "./components/Hero";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 const App: React.FC = () => {
   return (
@@ -14,8 +14,9 @@ const App: React.FC = () => {
       {/* Navbar */}
       <Navbar />
       <main>
-        <Routes>        
-      <Route path="/"  element={<Hero/>} />
+        <Routes>   
+      <Route path="/" element={<Hero />} />    
+      <Route path="/home"  element={<Hero/>} />
       <Route path="/skills"  element={<Skills/>}/>
       <Route path="/contact"  element={<Contact/>}/>
       <Route path="/projects"  element={<Projects/>}/>

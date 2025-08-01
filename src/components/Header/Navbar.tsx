@@ -14,8 +14,8 @@ const Navbar = () => {
   const pageNames = [
     { name: "Home" },
     { name: "Skills" },
-    { name: "Education" },
     { name: "Projects" },
+    { name: "Education" },
     { name: "Contact" },
   ];
 
