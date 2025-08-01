@@ -35,7 +35,7 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <div className="mx-auto px-4 py-12 text-white">
+    <div className="mx-auto px-4 text-white">
       <h2 className="text-3xl font-bold text-center text-white mb-12">🚀 Projects</h2>
 
       <div className="grid gap-10 md:grid-cols-2 max-w-6xl mx-auto">

@@ -30,7 +30,7 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section id="education" className="mx-auto px-4 py-12 text-white">
+    <section id="education" className="mx-auto px-4 text-white">
       <h2 className="text-3xl font-bold text-center text-white mb-12">🎓 Education Timeline</h2>
 
       <div className="relative border-l-[3px] border-purple-500 max-w-3xl mx-auto space-y-12">

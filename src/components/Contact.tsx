@@ -9,7 +9,7 @@ const ContactCard = ({ label, value }: { label: string; value: string }) => (
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-[#232533] text-white px-4 py-12">
+    <div id="contact" className="bg-[#232533] text-white px-4">
         <h2 className="text-3xl font-bold text-center text-white mb-12">
          Contact Information
       </h2>

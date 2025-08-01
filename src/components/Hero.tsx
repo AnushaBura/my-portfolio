@@ -7,8 +7,8 @@ const Hero = () => {
     <div className="flex flex-col md:flex-row items-center md:justify-between  px-8 md:px-24 py-16 bg-[#232533] relative">
       {/* Left: Title and Subtitle */}
       <div className="flex-1 flex flex-col justify-center items-start text-left space-y-6 z-10">
-        <h2 className="text-8xl text-white leading-tight mb-2">Hello! I'm</h2>
-        <h1 className="text-8xl text-white leading-tight mb-2">
+        <h2 className="text-4xl text-white leading-tight mb-2">Hello! I'm</h2>
+        <h1 className="text-6xl text-white leading-tight mb-2">
           Anusha Bura
           <div className="w-64 h-3 bg-pink-400 rounded-full mt-2" />
         </h1>
