@@ -8,19 +8,16 @@ const Hero = () => {
       {/* Left: Title and Subtitle */}
       <div className="flex-1 flex flex-col justify-center items-start text-left space-y-6 z-10">
         <h2 className="text-4xl text-white leading-tight mb-2">Hello! I'm</h2>
-        <h1 className="text-6xl text-white leading-tight mb-2">
-          Anusha Bura
-          <div className="w-64 h-3 bg-pink-400 rounded-full mt-2" />
-        </h1>
+        <h1 className="text-6xl text-white leading-tight mb-2">Anusha Bura</h1>
         <h3 className="text-xl md:text-2xl text-gray-300 font-medium mb-4">
-          Frontend Developer
+          Full Stack Developer
         </h3>
         <div>
           <a
             href={profilePDF}
             target="_blank"
             rel="noopener noreferrer"
-            className="border-2 px-8 py-3 rounded-full text-[#858792] flex items-center gap-2"
+            className="border-2 px-8 py-3 rounded-full text-white flex items-center gap-2"
           >
             <FaDownload />
             Get Resume
@@ -29,12 +26,12 @@ const Hero = () => {
       </div>
 
       {/* Right: Profile Image */}
-      <div className="hidden md:flex flex-1 flex-col items-center md:items-end justify-center relative mt-12 md:mt-0">
+      <div className="hidden md:flex flex-1 flex-col items-center relative mt-12 md:mt-0">
         <img
           src={profileImg}
           alt="Anusha Bura"
           className="rounded-2xl object-cover shadow-lg"
-          style={{ minHeight: "300px", minWidth: "200px" }}
+          style={{ minHeight: "300px", minWidth: "280px" }}
         />
       </div>
     </div>

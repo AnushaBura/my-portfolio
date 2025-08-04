@@ -30,7 +30,7 @@ const Navbar = () => {
         {pageNames.map((page) => (
           <li key={page.name}>
             <button
-              className="hover:text-pink-400 transition"
+              className="hover:text-white transition"
               onClick={() => handleNavigate(page.name)}
             >
               {page.name}
@@ -42,13 +42,13 @@ const Navbar = () => {
       {/* Right side */}
       <div className="flex w-full md:w-auto justify-end md:justify-normal items-center gap-4">
         {/* Profile picture desktop only */}
-        <div className="hidden md:flex px-6 py-2 rounded-full font-semibold items-center gap-2 transition">
+        {/* <div className="hidden md:flex px-6 py-2 rounded-full font-semibold items-center gap-2 transition">
           <img
             src={profileImg}
             alt="Profile"
             className="w-10 h-10 rounded-full"
           />
-        </div>
+        </div> */}
 
         {/* Hamburger menu button mobile only */}
         <button
@@ -74,13 +74,13 @@ const Navbar = () => {
       >
         {/* Close button */}
         <div className="flex justify-end m-3">
-        <button
-          onClick={() => setShowMobileMenu(false)}
-          aria-label="Close Menu"
-          className=" text-3xl text-[#858792] hover:text-pink-400"
-        >
-          <FiX />
-        </button>
+          <button
+            onClick={() => setShowMobileMenu(false)}
+            aria-label="Close Menu"
+            className=" text-3xl text-[#858792] hover:text-pink-400"
+          >
+            <FiX />
+          </button>
         </div>
 
         {/* Mobile menu items */}

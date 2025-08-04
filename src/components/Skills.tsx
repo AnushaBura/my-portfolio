@@ -5,40 +5,97 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { FaLayerGroup, FaCode, FaPenNib } from "react-icons/fa"; // Icons for design, development, illustration
+import {
+  FaCode,
+  FaDatabase,
+  FaTools,
+  FaCss3Alt,
+  FaBug,
+  FaCogs,
+} from "react-icons/fa";
 
 const SkillsSwiper = () => {
   const sections = [
     {
-      title: "UI/UX Design",
-      icon: <FaLayerGroup className="text-white text-4xl mb-4" />,
+      title: "Frontend Development",
+      icon: <FaCode className="text-white text-4xl mb-4" />,
       items: [
-        "Landing Pages",
-        "User Flow",
-        "Wireframing",
-        "Prototyping",
-        "Mobile App Design",
+        "React.js",
+        "Angular (6/8)",
+        "Vue.js",
+        "AngularJS",
+        "JavaScript (ES6+)",
       ],
     },
     {
-      title: "Development",
+      title: "Backend Development",
       icon: <FaCode className="text-white text-4xl mb-4" />,
-      items: ["HTML/CSS", "JavaScript", "React", "Vue", "Angular", "Node.js"],
-    },
-    {
-      title: "Development1",
-      icon: <FaCode className="text-white text-4xl mb-4" />,
-      items: ["API Integration", "Responsive Design", "Performance Optimization", "Testing"],
-    },
-    {
-      title: "Illustration",
-      icon: <FaPenNib className="text-white text-4xl mb-4" />,
       items: [
-        "Character Design",
-        "Icon Set",
-        "Illustration Guide",
-        "Illustration Set",
-        "Motion Graphic",
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "JWT Authentication",
+        "MVC Architecture",
+      ],
+    },
+    {
+      title: "Databases",
+      icon: <FaDatabase className="text-white text-4xl mb-4" />,
+      items: [
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "SQL / NoSQL",
+        "SQL Joins",
+        "Data Modeling",
+      ],
+    },
+    {
+      title: "UI / Styling Libraries",
+      icon: <FaCss3Alt className="text-white text-4xl mb-4" />,
+      items: [
+        "Tailwind CSS",
+        "Material UI",
+        "Bootstrap",
+        "Chakra UI",
+        "Sass",
+        "Figma",
+      ],
+    },
+    {
+      title: "Testing & QA",
+      icon: <FaBug className="text-white text-4xl mb-4" />,
+      items: [
+        "Jest",
+        "Karma",
+        "Jasmine",
+        "TDD",
+        "Unit Testing",
+        "Integration Testing",
+        "Code Coverage",
+      ],
+    },
+    {
+      title: "DevOps & CI/CD",
+      icon: <FaCogs className="text-white text-4xl mb-4" />,
+      items: [
+        "Azure DevOps",
+        "Jenkins",
+        "Git / GitHub / Bitbucket",
+        "Docker (basic)",
+      ],
+    },
+    {
+      title: "Agile & Tools",
+      icon: <FaTools className="text-white text-4xl mb-4" />,
+      items: [
+        "Agile / Scrum",
+        "Jira",
+        "Confluence",
+        "VS Code",
+        "Postman",
+        "JSON",
+        "NPM",
       ],
     },
   ];
@@ -65,14 +122,14 @@ const SkillsSwiper = () => {
       >
         {sections.map((section, index) => (
           <SwiperSlide key={index} className="flex justify-center items-center">
-            <div className="bg-[#2a2d3c] rounded-xl w-full min-h-[500px] flex flex-col items-center pt-10 text-center shadow-lg">
-              <div className=" flex flex-col justify-center items-center h-30">
-              {section.icon}
-              <h3 className="text-xl font-semibold mb-10 text-white">
-                {section.title}
-              </h3>
+            <div className="bg-[#2a2d3c] rounded-xl w-full min-h-[480px] flex flex-col items-center pt-10 text-center shadow-lg">
+              <div className="flex flex-col justify-center items-center h-30">
+                {section.icon}
+                <h3 className="text-xl font-semibold mb-10 text-white">
+                  {section.title}
+                </h3>
               </div>
-              <ul className="text-lg text-gray-300 space-y-5">
+              <ul className="text-lg text-[#858792] space-y-5 px-6">
                 {section.items.map((item, i) => (
                   <li key={i}>» {item}</li>
                 ))}
